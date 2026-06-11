@@ -1,0 +1,6 @@
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/KotekWatch.dir
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/KotekWatch_qmlimportscan.dir
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/edit_cache.dir
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/rebuild_cache.dir
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/KotekWatch_autogen_timestamp_deps.dir
+/home/miat/catwatch/KotekWatch/build/CMakeFiles/KotekWatch_autogen.dir

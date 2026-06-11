@@ -1,0 +1,9 @@
+-rootPath
+/home/miat/catwatch/KotekWatch
+-cmake-output
+-output-file
+/home/miat/catwatch/KotekWatch/build/.qt_plugins/Qt6_QmlPlugins_Imports_KotekWatch.cmake
+-importPath
+/home/miat/catwatch/KotekWatch/build
+-importPath
+/usr/local/Qt-6.5.3/./qml

@@ -1,0 +1,26 @@
+# ninja log v5
+6	98	1781204522041830480	.qt/qml_imports/KotekWatch_build.cmake	305f527476cd585d
+6	98	1781204522041830480	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/.qt/qml_imports/KotekWatch_build.cmake	305f527476cd585d
+9	36	1781208205414526402	KotekWatch_autogen/timestamp	98eeef51dc559c3f
+9	36	1781208205414526402	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/timestamp	98eeef51dc559c3f
+8	55	1781208371249897096	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+9	36	1781208205414526402	KotekWatch_autogen/mocs_compilation.cpp	98eeef51dc559c3f
+9	36	1781208205414526402	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/mocs_compilation.cpp	98eeef51dc559c3f
+117	702	1781208371885902283	KotekWatch	ac68ec7a28a1012e
+8	55	1781208371249897096	KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+55	117	1781208371309897585	CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o	3b96dad022b810b4
+355	2501	1781207813932078820	CMakeFiles/KotekWatch.dir/KotekWatch_autogen/mocs_compilation.cpp.o	52251c5793caee
+356	3711	1781207815133090043	CMakeFiles/KotekWatch.dir/main.cpp.o	9bf8a0d1f9db2114
+39	2047	1781208267599044917	CMakeFiles/KotekWatch.dir/watchbackend.cpp.o	39a99505443be7be
+8	35	1781208648837122930	KotekWatch_autogen/timestamp	98eeef51dc559c3f
+8	35	1781208648837122930	KotekWatch_autogen/mocs_compilation.cpp	98eeef51dc559c3f
+8	35	1781208648837122930	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/timestamp	98eeef51dc559c3f
+8	35	1781208648837122930	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/mocs_compilation.cpp	98eeef51dc559c3f
+38	92	1781208650187133599	KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+38	92	1781208650187133599	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+92	159	1781208650252134113	CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o	3b96dad022b810b4
+159	775	1781208650864138949	KotekWatch	ac68ec7a28a1012e
+8	61	1781208764875035772	KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+8	61	1781208764875035772	/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp	dbb0338cf82db2e5
+61	130	1781208764943036304	CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o	3b96dad022b810b4
+130	700	1781208765508040730	KotekWatch	ac68ec7a28a1012e

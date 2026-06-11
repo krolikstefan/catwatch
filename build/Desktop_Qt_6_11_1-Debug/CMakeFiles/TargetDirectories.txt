@@ -1,0 +1,6 @@
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/KotekWatch.dir
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/KotekWatch_qmlimportscan.dir
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/edit_cache.dir
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/KotekWatch_autogen_timestamp_deps.dir
+/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/KotekWatch_autogen.dir

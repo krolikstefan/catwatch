@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_KotekWatch_FILE /home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/KotekWatch)
+set(__QT_DEPLOY_TARGET_KotekWatch_TYPE EXECUTABLE)

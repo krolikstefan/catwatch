@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+3b2e04a04c177dc37b8998c333b10312 .qt_plugins/Qt6_QmlPlugins_Imports_KotekWatch.cmake
+a05e2ca9d10d57ebca6e0023bc15cc9b CMakeFiles/KotekWatch_autogen
+a05e2ca9d10d57ebca6e0023bc15cc9b CMakeFiles/KotekWatch_autogen_timestamp_deps
+a05e2ca9d10d57ebca6e0023bc15cc9b CMakeFiles/KotekWatch_qmlimportscan
+9a506f4f32a5861f3ef488e678cc1c0f KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp
+043360bb4c9e6bd1dd7abb1abdfc7875 KotekWatch_autogen/timestamp
