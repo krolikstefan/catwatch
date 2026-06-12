@@ -30,6 +30,19 @@ Jeśli klucz nie jest dostępny albo request się nie uda, backend zwraca dane z
 
 ## Build
 
+## Frontend Assets Setup
+
+Przed budowaniem frontendu przygotuj przezroczyste assety:
+
+```bash
+python3 frontend/scripts/remove_bg.py frontend/assets/icons frontend/assets/icons/transparent
+python3 frontend/scripts/remove_bg.py frontend/assets/illustrations frontend/assets/illustrations/transparent
+```
+
+Skrypt wykrywa tło `solid` albo `checkerboard`, usuwa je flood-fillem od narożników i zapisuje wynik do katalogu `transparent/`. Gdy wykrycie się nie powiedzie, plik zostaje skopiowany bez zmian i dostajesz ostrzeżenie do ręcznej weryfikacji.
+
+Fonty `Fredoka-Bold.ttf` i `Nunito-Regular.ttf` dodaj do `frontend/assets/fonts/`. Frontend ma fallback do systemowego sans-serif, ale docelowy design zakłada te dwa pliki.
+
 Budowanie obu komponentów z katalogu głównego:
 
 ```bash
