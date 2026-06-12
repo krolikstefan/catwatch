@@ -117,128 +117,212 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named KotekWatch
+# Target rules for targets named kotekwatch-backend
 
 # Build rule for target.
-KotekWatch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 KotekWatch
-.PHONY : KotekWatch
+kotekwatch-backend: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-backend
+.PHONY : kotekwatch-backend
 
 # fast build rule for target.
-KotekWatch/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/build
-.PHONY : KotekWatch/fast
+kotekwatch-backend/fast:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/kotekwatch-backend.dir/build.make backend/CMakeFiles/kotekwatch-backend.dir/build
+.PHONY : kotekwatch-backend/fast
 
 #=============================================================================
-# Target rules for targets named KotekWatch_qmlimportscan
+# Target rules for targets named kotekwatch-backend_autogen_timestamp_deps
 
 # Build rule for target.
-KotekWatch_qmlimportscan: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 KotekWatch_qmlimportscan
-.PHONY : KotekWatch_qmlimportscan
+kotekwatch-backend_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-backend_autogen_timestamp_deps
+.PHONY : kotekwatch-backend_autogen_timestamp_deps
 
 # fast build rule for target.
-KotekWatch_qmlimportscan/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch_qmlimportscan.dir/build.make CMakeFiles/KotekWatch_qmlimportscan.dir/build
-.PHONY : KotekWatch_qmlimportscan/fast
+kotekwatch-backend_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/kotekwatch-backend_autogen_timestamp_deps.dir/build.make backend/CMakeFiles/kotekwatch-backend_autogen_timestamp_deps.dir/build
+.PHONY : kotekwatch-backend_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named KotekWatch_autogen_timestamp_deps
+# Target rules for targets named kotekwatch-backend_autogen
 
 # Build rule for target.
-KotekWatch_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 KotekWatch_autogen_timestamp_deps
-.PHONY : KotekWatch_autogen_timestamp_deps
+kotekwatch-backend_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-backend_autogen
+.PHONY : kotekwatch-backend_autogen
 
 # fast build rule for target.
-KotekWatch_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch_autogen_timestamp_deps.dir/build.make CMakeFiles/KotekWatch_autogen_timestamp_deps.dir/build
-.PHONY : KotekWatch_autogen_timestamp_deps/fast
+kotekwatch-backend_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/kotekwatch-backend_autogen.dir/build.make backend/CMakeFiles/kotekwatch-backend_autogen.dir/build
+.PHONY : kotekwatch-backend_autogen/fast
 
 #=============================================================================
-# Target rules for targets named KotekWatch_autogen
+# Target rules for targets named kotekwatch-frontend
 
 # Build rule for target.
-KotekWatch_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 KotekWatch_autogen
-.PHONY : KotekWatch_autogen
+kotekwatch-frontend: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend
+.PHONY : kotekwatch-frontend
 
 # fast build rule for target.
-KotekWatch_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch_autogen.dir/build.make CMakeFiles/KotekWatch_autogen.dir/build
-.PHONY : KotekWatch_autogen/fast
+kotekwatch-frontend/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend.dir/build.make frontend/CMakeFiles/kotekwatch-frontend.dir/build
+.PHONY : kotekwatch-frontend/fast
 
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.o: KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.o
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_automoc_json_extraction
 
-# target to build an object file
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.o
+# Build rule for target.
+kotekwatch-frontend_automoc_json_extraction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_automoc_json_extraction
+.PHONY : kotekwatch-frontend_automoc_json_extraction
 
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.i: KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.i
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.i
+# fast build rule for target.
+kotekwatch-frontend_automoc_json_extraction/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_automoc_json_extraction.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_automoc_json_extraction.dir/build
+.PHONY : kotekwatch-frontend_automoc_json_extraction/fast
 
-# target to preprocess a source file
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.i
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.i
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_qmltyperegistration
 
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.s: KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.s
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.s
+# Build rule for target.
+kotekwatch-frontend_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_qmltyperegistration
+.PHONY : kotekwatch-frontend_qmltyperegistration
 
-# target to generate assembly for a file
-KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.s
-.PHONY : KotekWatch_autogen/EWIEGA46WW/qrc_qml.cpp.s
+# fast build rule for target.
+kotekwatch-frontend_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_qmltyperegistration.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_qmltyperegistration.dir/build
+.PHONY : kotekwatch-frontend_qmltyperegistration/fast
 
-KotekWatch_autogen/mocs_compilation.o: KotekWatch_autogen/mocs_compilation.cpp.o
-.PHONY : KotekWatch_autogen/mocs_compilation.o
+#=============================================================================
+# Target rules for targets named all_qmltyperegistrations
 
-# target to build an object file
-KotekWatch_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/mocs_compilation.cpp.o
-.PHONY : KotekWatch_autogen/mocs_compilation.cpp.o
+# Build rule for target.
+all_qmltyperegistrations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmltyperegistrations
+.PHONY : all_qmltyperegistrations
 
-KotekWatch_autogen/mocs_compilation.i: KotekWatch_autogen/mocs_compilation.cpp.i
-.PHONY : KotekWatch_autogen/mocs_compilation.i
+# fast build rule for target.
+all_qmltyperegistrations/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/all_qmltyperegistrations.dir/build.make frontend/CMakeFiles/all_qmltyperegistrations.dir/build
+.PHONY : all_qmltyperegistrations/fast
 
-# target to preprocess a source file
-KotekWatch_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/mocs_compilation.cpp.i
-.PHONY : KotekWatch_autogen/mocs_compilation.cpp.i
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_other_files
 
-KotekWatch_autogen/mocs_compilation.s: KotekWatch_autogen/mocs_compilation.cpp.s
-.PHONY : KotekWatch_autogen/mocs_compilation.s
+# Build rule for target.
+kotekwatch-frontend_other_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_other_files
+.PHONY : kotekwatch-frontend_other_files
 
-# target to generate assembly for a file
-KotekWatch_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/KotekWatch_autogen/mocs_compilation.cpp.s
-.PHONY : KotekWatch_autogen/mocs_compilation.cpp.s
+# fast build rule for target.
+kotekwatch-frontend_other_files/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_other_files.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_other_files.dir/build
+.PHONY : kotekwatch-frontend_other_files/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_qmllint
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/main.cpp.o
-.PHONY : main.cpp.o
+# Build rule for target.
+kotekwatch-frontend_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_qmllint
+.PHONY : kotekwatch-frontend_qmllint
 
-main.i: main.cpp.i
-.PHONY : main.i
+# fast build rule for target.
+kotekwatch-frontend_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_qmllint.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_qmllint.dir/build
+.PHONY : kotekwatch-frontend_qmllint/fast
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/main.cpp.i
-.PHONY : main.cpp.i
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_qmllint_json
 
-main.s: main.cpp.s
-.PHONY : main.s
+# Build rule for target.
+kotekwatch-frontend_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_qmllint_json
+.PHONY : kotekwatch-frontend_qmllint_json
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/KotekWatch.dir/build.make CMakeFiles/KotekWatch.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+kotekwatch-frontend_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_qmllint_json.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_qmllint_json.dir/build
+.PHONY : kotekwatch-frontend_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named all_qmllint
+
+# Build rule for target.
+all_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmllint
+.PHONY : all_qmllint
+
+# fast build rule for target.
+all_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/all_qmllint.dir/build.make frontend/CMakeFiles/all_qmllint.dir/build
+.PHONY : all_qmllint/fast
+
+#=============================================================================
+# Target rules for targets named all_qmllint_json
+
+# Build rule for target.
+all_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmllint_json
+.PHONY : all_qmllint_json
+
+# fast build rule for target.
+all_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/all_qmllint_json.dir/build.make frontend/CMakeFiles/all_qmllint_json.dir/build
+.PHONY : all_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_tooling
+
+# Build rule for target.
+kotekwatch-frontend_tooling: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_tooling
+.PHONY : kotekwatch-frontend_tooling
+
+# fast build rule for target.
+kotekwatch-frontend_tooling/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_tooling.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_tooling.dir/build
+.PHONY : kotekwatch-frontend_tooling/fast
+
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_qmlimportscan
+
+# Build rule for target.
+kotekwatch-frontend_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_qmlimportscan
+.PHONY : kotekwatch-frontend_qmlimportscan
+
+# fast build rule for target.
+kotekwatch-frontend_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_qmlimportscan.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_qmlimportscan.dir/build
+.PHONY : kotekwatch-frontend_qmlimportscan/fast
+
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_autogen_timestamp_deps
+
+# Build rule for target.
+kotekwatch-frontend_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_autogen_timestamp_deps
+.PHONY : kotekwatch-frontend_autogen_timestamp_deps
+
+# fast build rule for target.
+kotekwatch-frontend_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_autogen_timestamp_deps.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_autogen_timestamp_deps.dir/build
+.PHONY : kotekwatch-frontend_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named kotekwatch-frontend_autogen
+
+# Build rule for target.
+kotekwatch-frontend_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kotekwatch-frontend_autogen
+.PHONY : kotekwatch-frontend_autogen
+
+# fast build rule for target.
+kotekwatch-frontend_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f frontend/CMakeFiles/kotekwatch-frontend_autogen.dir/build.make frontend/CMakeFiles/kotekwatch-frontend_autogen.dir/build
+.PHONY : kotekwatch-frontend_autogen/fast
 
 # Help Target
 help:
@@ -248,19 +332,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... KotekWatch_autogen"
-	@echo "... KotekWatch_autogen_timestamp_deps"
-	@echo "... KotekWatch_qmlimportscan"
-	@echo "... KotekWatch"
-	@echo "... KotekWatch_autogen/EWIEGA46WW/qrc_qml.o"
-	@echo "... KotekWatch_autogen/EWIEGA46WW/qrc_qml.i"
-	@echo "... KotekWatch_autogen/EWIEGA46WW/qrc_qml.s"
-	@echo "... KotekWatch_autogen/mocs_compilation.o"
-	@echo "... KotekWatch_autogen/mocs_compilation.i"
-	@echo "... KotekWatch_autogen/mocs_compilation.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... all_qmllint"
+	@echo "... all_qmllint_json"
+	@echo "... all_qmltyperegistrations"
+	@echo "... kotekwatch-backend_autogen"
+	@echo "... kotekwatch-backend_autogen_timestamp_deps"
+	@echo "... kotekwatch-frontend_autogen"
+	@echo "... kotekwatch-frontend_autogen_timestamp_deps"
+	@echo "... kotekwatch-frontend_automoc_json_extraction"
+	@echo "... kotekwatch-frontend_other_files"
+	@echo "... kotekwatch-frontend_qmlimportscan"
+	@echo "... kotekwatch-frontend_qmllint"
+	@echo "... kotekwatch-frontend_qmllint_json"
+	@echo "... kotekwatch-frontend_qmltyperegistration"
+	@echo "... kotekwatch-backend"
+	@echo "... kotekwatch-frontend"
+	@echo "... kotekwatch-frontend_tooling"
 .PHONY : help
 
 

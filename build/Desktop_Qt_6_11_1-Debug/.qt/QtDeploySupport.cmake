@@ -62,7 +62,6 @@ set(__QT_DEPLOY_QT_DEBUG_POSTFIX "")
 set(__qt_deploy_support_files
     "/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/.qt/QtDeployTargets.cmake"
     "/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
-    "/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6Qml/Qt6QmlDeploySupport.cmake"
 )
 foreach(__qt_deploy_support_file IN LISTS __qt_deploy_support_files)
     include("${__qt_deploy_support_file}")

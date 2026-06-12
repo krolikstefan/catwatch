@@ -1,90 +1,101 @@
-# KotekWatch
+# Kotek Watch
 
-KotekWatch to prototyp interfejsu zegarka zbudowany w `Qt Quick/QML`. Aplikacja uruchamia pełnoekranowy, bezramkowy widok stylizowany na ekran smartwatcha i prezentuje kilka prostych ekranów z motywem kota.
+Minimalny prototyp składa się z dwóch projektów Qt/C++:
 
-## Co zawiera projekt
-
-- ekran zegara z godziną i dniem tygodnia,
-- ekran kroków z animowanym kotem i celem aktywności,
-- ekran pogody z symulowaną temperaturą i stanem pogody,
-- ekran `SOS` z animacją alarmu i anulowaniem przez dłuższe przytrzymanie,
-- backend w C++, który dostarcza dane do QML przez `contextProperty`.
-
-Nawigacja między ekranami działa poziomym przesunięciem w `SwipeView`.
-
-## Technologie
-
-- C++17
-- CMake 3.16+
-- Qt Quick
-- Qt Quick Controls 2
-- QML Shapes
-
-Projekt jest przygotowany pod `Qt5` i `Qt6` przez `find_package(QT NAMES Qt6 Qt5 ...)`, ale rozwijany jest w układzie typowym dla `Qt 6`.
-
-## Struktura
-
-- `main.cpp` - start aplikacji, rejestracja fontów, konfiguracja okna i silnika QML
-- `watchbackend.cpp`, `watchbackend.h` - symulowane dane czasu, kroków i pogody
-- `qml/main.qml` - główne okno i `SwipeView`
-- `qml/Screen*.qml` - osobne ekrany interfejsu
-- `qml/Theme.qml` - kolory, rozmiary fontów i wspólne stałe UI
-- `fonts/README.md` - informacja o opcjonalnych fontach lokalnych
+- `backend` - aplikacja konsolowa z REST API, WebSocket, SQLite i symulatorem danych zegarka.
+- `frontend` - aplikacja Qt Quick/QML imitująca ekran smartwatcha 396x396.
 
 ## Wymagania
 
-Do zbudowania projektu potrzebne są:
+- Qt 6.4+ z modułami: `Core`, `Network`, `Sql`, `Quick`, `QuickControls2`
+- CMake 3.21+
+- Kompilator C++17
 
-- kompilator C++ z obsługą C++17,
-- `cmake`,
-- pakiety deweloperskie `Qt Quick` i `Qt Quick Controls 2`.
+## OpenWeather
 
-Opcjonalnie można dodać fonty:
+Backend próbuje pobierać pogodę z OpenWeather, jeśli ustawisz zmienną środowiskową:
 
-- `fonts/Fredoka-SemiBold.ttf`
-- `fonts/Nunito-Bold.ttf`
+```bash
+export OPENWEATHER_API_KEY=twoj_klucz
+```
 
-Jeśli ich nie ma, Qt użyje fontów systemowych.
+Opcjonalnie możesz też ustawić:
 
-## Budowanie
+```bash
+export KOTEKWATCH_WEATHER_LAT=52.2297
+export KOTEKWATCH_WEATHER_LON=21.0122
+```
+
+Jeśli klucz nie jest dostępny albo request się nie uda, backend zwraca dane z cache SQLite lub wartości zastępcze.
+
+## Build
+
+Budowanie obu komponentów z katalogu głównego:
 
 ```bash
 cmake -S . -B build
 cmake --build build
 ```
 
-Konfiguracja została sprawdzona lokalnie poleceniem:
+Albo osobno:
 
 ```bash
-cmake -S . -B /tmp/kotekwatch-build
+cmake -S backend -B backend/build
+cmake --build backend/build
+
+cmake -S frontend -B frontend/build
+cmake --build frontend/build
 ```
 
 ## Uruchomienie
 
+To są dwa osobne procesy. Backend nie uruchamia GUI.
+
+Najprościej:
+
 ```bash
-./build/KotekWatch
+./run-all.sh
 ```
 
-Aplikacja:
+Albo osobno:
 
-- otwiera się jako okno bez ramek,
-- przechodzi w tryb pełnoekranowy,
-- ładuje interfejs z zasobów `qrc:/qml`.
+```bash
+./run-backend.sh
+./run-frontend.sh
+```
 
-## Jak działa backend
+Możesz też nadal odpalać binarki bezpośrednio:
 
-`WatchBackend` nie pobiera jeszcze danych z urządzenia ani z sieci. Zamiast tego:
+```bash
+./build/backend/kotekwatch-backend
+./build/frontend/kotekwatch-frontend
+```
 
-- startuje z ustawioną datą `2026-06-15 10:30`,
-- co sekundę przesuwa czas o `73` sekundy,
-- zwiększa liczbę kroków w symulacji,
-- cyklicznie zmienia stan pogody.
+Domyślne porty:
 
-To oznacza, że projekt jest obecnie demonstratorem UI, a nie gotową aplikacją sprzętową.
+- REST: `http://127.0.0.1:8080`
+- WebSocket: `ws://127.0.0.1:8081/ws`
 
-## Ograniczenia
+Możesz je nadpisać:
 
-- brak integracji z prawdziwymi sensorami i API pogody,
-- brak logiki połączenia alarmowego w ekranie `SOS`,
-- brak testów automatycznych,
-- rozmiar i zachowanie są dostrojone głównie pod prezentację interfejsu zegarka.
+```bash
+export KOTEKWATCH_HTTP_PORT=18080
+export KOTEKWATCH_WS_PORT=18081
+export KOTEKWATCH_API_BASE_URL=http://127.0.0.1:18080
+export KOTEKWATCH_WS_URL=ws://127.0.0.1:18081/ws
+```
+
+## API
+
+- `GET /api/activity`
+- `POST /api/activity`
+- `POST /api/activity/reset`
+- `GET /api/weather`
+- `GET /api/relax/exercises`
+- `POST /api/relax/complete/{id}`
+- `GET /api/notifications`
+- `GET /api/device/status`
+- `POST /api/simulation/start`
+- `POST /api/simulation/stop`
+
+WebSocket `ws://127.0.0.1:8081/ws` wypycha live update z krokami, kaloriami, procentem celu, baterią i tętnem.

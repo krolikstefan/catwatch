@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.8.0-124-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/usr/local/Qt-6.5.3/lib/cmake/Qt6/qt.toolchain.cmake")
+
 
 set(CMAKE_SYSTEM "Linux-6.8.0-124-generic")
 set(CMAKE_SYSTEM_NAME "Linux")

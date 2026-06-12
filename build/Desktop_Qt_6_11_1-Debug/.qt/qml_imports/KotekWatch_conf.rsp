@@ -1,9 +1,0 @@
--rootPath
-/home/miat/catwatch/KotekWatch
--cmake-output
--output-file
-/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/.qt/qml_imports/KotekWatch_conf.cmake
--importPath
-/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug
--importPath
-/home/miat/Qt/6.11.1/gcc_64/qml

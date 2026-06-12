@@ -253,6 +253,24 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+KotekWatchBackend_BINARY_DIR:STATIC=/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/backend
+
+//Value Computed by CMake
+KotekWatchBackend_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+KotekWatchBackend_SOURCE_DIR:STATIC=/home/miat/catwatch/KotekWatch/backend
+
+//Value Computed by CMake
+KotekWatchFrontend_BINARY_DIR:STATIC=/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug/frontend
+
+//Value Computed by CMake
+KotekWatchFrontend_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+KotekWatchFrontend_SOURCE_DIR:STATIC=/home/miat/catwatch/KotekWatch/frontend
+
+//Value Computed by CMake
 KotekWatch_BINARY_DIR:STATIC=/home/miat/catwatch/KotekWatch/build/Desktop_Qt_6_11_1-Debug
 
 //Value Computed by CMake
@@ -315,9 +333,6 @@ QT_CREATOR_ENABLE_PACKAGE_MANAGER_SETUP:BOOL=ON
 
 //Qt Creator source groups extensions
 QT_CREATOR_SOURCE_GROUPS:BOOL=ON
-
-//The directory containing a CMake configuration file for QT.
-QT_DIR:PATH=/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6
 
 //No help, variable specified on the command line.
 QT_ENABLE_QML_DEBUG:BOOL=ON
@@ -387,6 +402,9 @@ Qt6QuickTools_DIR:PATH=/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6QuickTools
 
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6Quick
+
+//The directory containing a CMake configuration file for Qt6Sql.
+Qt6Sql_DIR:PATH=/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6Sql
 
 //The directory containing a CMake configuration file for Qt6TaskTree.
 Qt6TaskTree_DIR:PATH=/home/miat/Qt/6.11.1/gcc_64/lib/cmake/Qt6TaskTree
@@ -523,7 +541,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -570,8 +588,6 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
@@ -1232,6 +1248,8 @@ QT_FEATURE_socks5:INTERNAL=ON
 QT_FEATURE_sortfilterproxymodel:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)
