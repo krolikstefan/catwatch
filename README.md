@@ -1,4 +1,4 @@
-# KotekWatch
+# KotekWatch - AI Hackathon
 
 KotekWatch to prototyp interfejsu zegarka zbudowany w `Qt Quick/QML`. Aplikacja uruchamia pełnoekranowy, bezramkowy widok stylizowany na ekran smartwatcha i prezentuje kilka prostych ekranów z motywem kota.
 
